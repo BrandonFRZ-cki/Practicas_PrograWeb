@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Valor Absoluto</title>
+</head>
+<body>
+
+    <a href="/ejemplos/index.html"><h3>Volver</h3></a>
+
+  <header>
+    <h1>El Valor Absoluto</h1>
+    <p><em>La distancia de un número al cero</em></p>
+  </header>
+
+  <nav>
+    <a href="#definicion">Definición</a> |
+    <a href="#ejemplos">Ejemplos</a> |
+    <a href="#propiedades">Propiedades</a> |
+    <a href="#ecuaciones">Ecuaciones</a> |
+    <a href="#inecuaciones">Inecuaciones</a> |
+    <a href="#usos">Usos</a>
+  </nav>
+
+  <hr>
+
+  <main>
+
+    <section id="definicion">
+      <h2>¿Qué es el valor absoluto?</h2>
+      <p>
+        El <strong>valor absoluto</strong> de un número es la <strong>distancia</strong> que hay entre
+        ese número y el cero en la recta numérica. Como una distancia nunca es negativa, el valor
+        absoluto siempre es <strong>positivo o cero</strong>.
+      </p>
+
+      <figure>
+        <svg width="560" height="140" viewBox="0 0 560 140" role="img" aria-label="Recta numérica: menos 5 y 5 están a 5 unidades del cero">
+          <!-- recta -->
+          <line x1="20" y1="80" x2="540" y2="80" stroke="#000" stroke-width="2"/>
+          <polygon points="540,80 530,75 530,85" fill="#000"/>
+          <polygon points="20,80 30,75 30,85" fill="#000"/>
+          <!-- marcas de -6 a 6 (cada unidad = 40px, cero en x=280) -->
+          <g stroke="#000" stroke-width="2">
+            <line x1="40" y1="74" x2="40" y2="86"/><line x1="80" y1="74" x2="80" y2="86"/>
+            <line x1="120" y1="74" x2="120" y2="86"/><line x1="160" y1="74" x2="160" y2="86"/>
+            <line x1="200" y1="74" x2="200" y2="86"/><line x1="240" y1="74" x2="240" y2="86"/>
+            <line x1="280" y1="70" x2="280" y2="90"/>
+            <line x1="320" y1="74" x2="320" y2="86"/><line x1="360" y1="74" x2="360" y2="86"/>
+            <line x1="400" y1="74" x2="400" y2="86"/><line x1="440" y1="74" x2="440" y2="86"/>
+            <line x1="480" y1="74" x2="480" y2="86"/><line x1="520" y1="74" x2="520" y2="86"/>
+          </g>
+          <g font-family="Arial" font-size="13" text-anchor="middle">
+            <text x="40" y="106">−6</text><text x="80" y="106">−5</text><text x="120" y="106">−4</text>
+            <text x="160" y="106">−3</text><text x="200" y="106">−2</text><text x="240" y="106">−1</text>
+            <text x="280" y="106">0</text><text x="320" y="106">1</text><text x="360" y="106">2</text>
+            <text x="400" y="106">3</text><text x="440" y="106">4</text><text x="480" y="106">5</text>
+            <text x="520" y="106">6</text>
+          </g>
+          <!-- distancias -->
+          <line x1="80" y1="50" x2="280" y2="50" stroke="#d62828" stroke-width="3"/>
+          <line x1="280" y1="50" x2="480" y2="50" stroke="#1d70b8" stroke-width="3"/>
+          <circle cx="80" cy="80" r="6" fill="#d62828"/>
+          <circle cx="480" cy="80" r="6" fill="#1d70b8"/>
+          <g font-family="Arial" font-size="15" text-anchor="middle">
+            <text x="180" y="40" fill="#d62828">|−5| = 5</text>
+            <text x="380" y="40" fill="#1d70b8">|5| = 5</text>
+          </g>
+          <text x="280" y="130" font-family="Arial" font-size="13" text-anchor="middle">Ambos están a 5 unidades del cero</text>
+        </svg>
+        <figcaption>El valor absoluto es la distancia al cero en la recta numérica.</figcaption>
+      </figure>
+
+      <p>Se escribe con dos barras verticales: <strong>|x|</strong>, y se lee "valor absoluto de x".</p>
+
+      <h3>Definición formal</h3>
+      <p>
+        |x| = x &nbsp;&nbsp; si x &ge; 0<br>
+        |x| = &minus;x &nbsp;&nbsp; si x &lt; 0
+      </p>
+      <p>
+        Es decir: si el número es positivo o cero, se queda igual; si es negativo, se le cambia el signo.
+      </p>
+    </section>
+
+    <section id="ejemplos">
+      <h2>Ejemplos</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Valor absoluto</th>
+            <th>Explicación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>5</td><td>|5| = 5</td><td>Está a 5 unidades del cero</td></tr>
+          <tr><td>&minus;5</td><td>|&minus;5| = 5</td><td>También está a 5 unidades del cero</td></tr>
+          <tr><td>0</td><td>|0| = 0</td><td>El cero está a distancia 0 de sí mismo</td></tr>
+          <tr><td>&minus;3,7</td><td>|&minus;3,7| = 3,7</td><td>Funciona igual con decimales</td></tr>
+          <tr><td>&minus;2/3</td><td>|&minus;2/3| = 2/3</td><td>Funciona igual con fracciones</td></tr>
+          <tr><td>8 &minus; 12</td><td>|8 &minus; 12| = |&minus;4| = 4</td><td>Primero se resuelve lo de adentro</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="propiedades">
+      <h2>Propiedades</h2>
+      <ol>
+        <li><strong>No negatividad:</strong> |a| &ge; 0 para cualquier número a.</li>
+        <li><strong>Solo el cero vale cero:</strong> |a| = 0 únicamente si a = 0.</li>
+        <li><strong>Simetría:</strong> |&minus;a| = |a|.</li>
+        <li><strong>Producto:</strong> |a &middot; b| = |a| &middot; |b|.</li>
+        <li><strong>Cociente:</strong> |a / b| = |a| / |b| &nbsp;(con b &ne; 0).</li>
+        <li><strong>Desigualdad triangular:</strong> |a + b| &le; |a| + |b|.</li>
+        <li><strong>Distancia entre dos números:</strong> la distancia entre a y b es |a &minus; b|.</li>
+      </ol>
+      <p>
+        <strong>Cuidado:</strong> |a + b| no siempre es igual a |a| + |b|.<br>
+        Ejemplo: |3 + (&minus;5)| = |&minus;2| = 2, pero |3| + |&minus;5| = 3 + 5 = 8.
+      </p>
+    </section>
+
+    <section id="ecuaciones">
+      <h2>Ecuaciones con valor absoluto</h2>
+      <p>
+        Si <strong>|x| = a</strong> (con a positivo), entonces hay dos soluciones:
+        <strong>x = a</strong> o <strong>x = &minus;a</strong>.
+      </p>
+      <h3>Ejemplo 1</h3>
+      <p>|x| = 7 &nbsp;&rarr;&nbsp; x = 7 &nbsp;o&nbsp; x = &minus;7</p>
+      <h3>Ejemplo 2</h3>
+      <p>
+        |x &minus; 3| = 5<br>
+        x &minus; 3 = 5 &nbsp;&rarr;&nbsp; x = 8<br>
+        x &minus; 3 = &minus;5 &nbsp;&rarr;&nbsp; x = &minus;2<br>
+        <strong>Soluciones: x = 8 y x = &minus;2</strong>
+      </p>
+      <h3>Ejemplo 3 (sin solución)</h3>
+      <p>|x| = &minus;4 no tiene solución, porque un valor absoluto nunca puede ser negativo.</p>
+    </section>
+
+    <section id="inecuaciones">
+      <h2>Inecuaciones con valor absoluto</h2>
+      <ul>
+        <li><strong>|x| &lt; a</strong> significa &minus;a &lt; x &lt; a (los números <em>cerca</em> del cero).</li>
+        <li><strong>|x| &gt; a</strong> significa x &lt; &minus;a o x &gt; a (los números <em>lejos</em> del cero).</li>
+      </ul>
+      <h3>Ejemplo</h3>
+      <p>
+        |x &minus; 2| &lt; 3<br>
+        &minus;3 &lt; x &minus; 2 &lt; 3<br>
+        &minus;1 &lt; x &lt; 5<br>
+        <strong>Solución: todos los números entre &minus;1 y 5.</strong>
+      </p>
+    </section>
+
+    <section id="usos">
+      <h2>¿Para qué se usa?</h2>
+      <ul>
+        <li><strong>Distancias:</strong> la distancia entre dos puntos siempre es positiva.</li>
+        <li><strong>Temperaturas:</strong> la diferencia entre &minus;3 °C y 5 °C es |5 &minus; (&minus;3)| = 8 °C.</li>
+        <li><strong>Errores de medición:</strong> el error es |valor medido &minus; valor real|.</li>
+        <li><strong>Programación:</strong> casi todos los lenguajes tienen una función <code>abs()</code>.</li>
+      </ul>
+      <blockquote>
+        En resumen: el valor absoluto "quita el signo" y nos dice qué tan lejos está un número del cero.
+      </blockquote>
+    </section>
+
+  </main>
+
+  <hr>
+    <a href="/ejemplos/index.html"><h3>Volver</h3></a>
+  </footer>
+
+</body>
+</html>
